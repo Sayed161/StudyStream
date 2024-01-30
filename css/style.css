@@ -432,3 +432,10 @@
     padding-right: 0;
     border-right: none;
 }
+.input{
+    padding: 15px 25px;
+    border: none;
+    margin: 10px;
+    box-shadow: 4px 4px 5px grey;
+    border-radius: 5px;
+}
