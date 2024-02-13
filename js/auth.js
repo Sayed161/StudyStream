@@ -10,7 +10,7 @@ const handleRegistration = (event)=>{
     if (password === confirm_password){
         document.getElementById("error").innerText = "";
         if(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password)){
-            fetch("https://online-school-igar.onrender.com/register/",{method: "POST",
+            fetch("http://127.0.0.1:8000/register/",{method: "POST",
             headers : {"content-type":"application/json"},
             body :JSON.stringify(info)
         
@@ -31,12 +31,14 @@ const handleRegistration = (event)=>{
 
 
 const handleLogin = (event)=>{
+    console.log("hello");
     event.preventDefault();
     
     const username = get_value("login_username");
     const password = get_value("login_password");
-    if((username,password)){
-        fetch("https://online-school-igar.onrender.com/login/",{
+    console.log(username, password);
+    if((username && password)){
+        fetch("http://127.0.0.1:8000/login/",{
             method: "POST",
             headers : {"content-type":"application/json"},
             body :JSON.stringify({username,password})
@@ -53,12 +55,16 @@ const handleLogin = (event)=>{
        
     });
     }
+    else{
+        console.log("User not found");
+    }
    
    
 }
 
 
 const get_value = (id) => {
-const value = document.getElementById(id).value;
-return value;
+    const value = document.getElementById(id).value;
+    return value;
 }
+

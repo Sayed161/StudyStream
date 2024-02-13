@@ -15,11 +15,11 @@ function getParameterByName(name, url) {
 
 const lessonID = getParameterByName('id');
 
-    fetch(`https://online-school-igar.onrender.com/lesson/?course=${lessonID}`)
+    fetch(`http://127.0.0.1:8000/lesson/?course=${lessonID}`)
     .then(res=>res.json())
     .then((data)=>{
         data.forEach(lesson=>{
-        
+            
             const lesson_data = document.createElement('div');
              lesson_data.innerHTML = ` 
              <div class="video">
@@ -43,3 +43,5 @@ const lessonID = getParameterByName('id');
         })
     })
 
+
+  
