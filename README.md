@@ -8,12 +8,12 @@ Welcome to the Online School Platform! This platform is designed to facilitate e
 - Registered users can log in and log out securely.
 
 ## 2. Course Creation:
-- Teachers have the ability to create courses for their students.
+- Admin have the ability to create courses for their students.
 - Course creation includes providing details such as title, description, department, and other relevant information.
 
 ## 3. Course Management:
-- Teachers can update and delete courses they have created.
-- Teachers have access only to the courses they have added.
+- Admin can update and delete courses they have created.
+- Admin have access only to the courses they have added.
 
 ## 4. Course Listings:
 - All available courses are displayed on the homepage.
