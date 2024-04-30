@@ -1,6 +1,6 @@
 # Online School Platform
 
-Welcome to the Online School Platform! This platform is designed to facilitate e-learning by providing users with access to various courses, interactive quizzes, resources, and instructor interaction. Below is an overview of the features and functionalities implemented in this platform:
+Welcome to the Online School Platform! This Django-based project is designed to facilitate e-learning by providing users with access to various courses, interactive quizzes, resources, and instructor interaction. Below is an overview of the features and functionalities implemented in this platform:
 
 ## 1. User Registration and Authentication:
 - Users can register for an account, which involves providing necessary details.
@@ -26,23 +26,18 @@ Welcome to the Online School Platform! This platform is designed to facilitate e
 ## Deployment:
 To deploy the Online School platform locally, follow these steps:
 1. Clone this repository to your local machine.
-2. Install the necessary dependencies by running `npm install`.
+2. Install the necessary dependencies by running `pip install -r requirements.txt`.
 3. Set up a database according to the provided schema.
 4. Configure the environment variables for database connection and email services.
-5. Run the application using `npm start`.
+5. Run the Django development server using `python manage.py runserver`.
 6. Access the platform via the provided URL.
 
 ## Technologies Used:
+- Framework: Django
 - Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: MongoDB
+- Backend: Python
+- Database: SQLite
 - Email Services: SMTP
 
-## Contributors:
-- [Your Name](link to your GitHub profile)
 
-## License:
-This project is licensed under the [MIT License](link to license file).
 
-## Acknowledgements:
-- Special thanks to [Any relevant libraries or resources used].
